@@ -98,42 +98,42 @@ public class HelloController implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        welcome.setStyle("-fx-background-color:#fff;" + "-fx-border-width:3px;");
-        DropShadow original = new DropShadow(20, Color.valueOf("#6a9ae7"));
-
-        welcome.setEffect(original);
-        niceDay.setEffect(original);
-
-        welcome.setOnMouseEntered((MouseEvent event) -> {
-            DropShadow shadow = new DropShadow(50, Color.valueOf("#6a9ae7"));
-
-            welcome.setStyle("-fx-text-fill: #fff");
-            welcome.setEffect(shadow);
-            niceDay.setEffect(shadow);
-        });
-
-        welcome.setOnMouseExited((MouseEvent event) -> {
-            DropShadow shadow = new DropShadow(20, Color.valueOf("#6a9ae7"));
-            welcome.setStyle("-fx-text-fill:#6a9ae7");
-            welcome.setEffect(shadow);
-            niceDay.setEffect(shadow);
-        });
-
-
-        niceDay.setOnMouseEntered((MouseEvent event) -> {
-            DropShadow shadow = new DropShadow(50, Color.valueOf("#6a9ae7"));
-
-            welcome.setStyle("-fx-text-fill: #fff");
-            welcome.setEffect(shadow);
-            niceDay.setEffect(shadow);
-        });
-
-        niceDay.setOnMouseExited((MouseEvent event) -> {
-            DropShadow shadow = new DropShadow(20, Color.valueOf("#6a9ae7"));
-            welcome.setStyle("-fx-text-fill:#6a9ae7");
-            welcome.setEffect(shadow);
-            niceDay.setEffect(shadow);
-        });
-
+//        welcome.setStyle("-fx-background-color:#fff;" + "-fx-border-width:3px;");
+//        DropShadow original = new DropShadow(20, Color.valueOf("#6a9ae7"));
+//
+//        welcome.setEffect(original);
+//        niceDay.setEffect(original);
+//
+//        welcome.setOnMouseEntered((MouseEvent event) -> {
+//            DropShadow shadow = new DropShadow(50, Color.valueOf("#6a9ae7"));
+//
+//            welcome.setStyle("-fx-text-fill: #fff");
+//            welcome.setEffect(shadow);
+//            niceDay.setEffect(shadow);
+//        });
+//
+//        welcome.setOnMouseExited((MouseEvent event) -> {
+//            DropShadow shadow = new DropShadow(20, Color.valueOf("#6a9ae7"));
+//            welcome.setStyle("-fx-text-fill:#6a9ae7");
+//            welcome.setEffect(shadow);
+//            niceDay.setEffect(shadow);
+//        });
+//
+//
+//        niceDay.setOnMouseEntered((MouseEvent event) -> {
+//            DropShadow shadow = new DropShadow(50, Color.valueOf("#6a9ae7"));
+//
+//            welcome.setStyle("-fx-text-fill: #fff");
+//            welcome.setEffect(shadow);
+//            niceDay.setEffect(shadow);
+//        });
+//
+//        niceDay.setOnMouseExited((MouseEvent event) -> {
+//            DropShadow shadow = new DropShadow(20, Color.valueOf("#6a9ae7"));
+//            welcome.setStyle("-fx-text-fill:#6a9ae7");
+//            welcome.setEffect(shadow);
+//            niceDay.setEffect(shadow);
+//        });
+//
     }
 }
